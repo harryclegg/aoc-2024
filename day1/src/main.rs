@@ -28,7 +28,7 @@ fn main() {
     let mut prod: i32 = 0;
     for a in left {
         let occurences : usize = *map.get(&a).unwrap_or(&0);
-        prod += (&a * occurences as i32);
+        prod += &a * occurences as i32;
     }
 
     println!(
